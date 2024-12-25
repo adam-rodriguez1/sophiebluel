@@ -1,0 +1,273 @@
+.modal {
+  position: fixed;
+  width: 630px;
+  height: 688px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  border: 1px #B3B3B3 solid;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+.modal i {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+.modal p {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.modal input {
+  width: 237px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.modal hr {
+  border: 1px solid #B3B3B3;
+  margin-bottom: 60px;
+  width: 420px;
+  margin-top: 60px;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+#closeButton {
+  cursor: pointer;
+}
+
+.gallery-modal {      
+  display: grid;
+  grid-template-columns: repeat(5, 76.86px);
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  padding: 0;
+} 
+
+.gallery-modal figure {
+  margin: 0;
+  padding: 0;
+  width: 76.86px;
+  height: 102.57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure img.icon-poubelle {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 3;
+}
+#portfolio h2{
+	margin-left: 150px;
+}
+#add-modal-screen{
+  position: fixed;
+  width: 630px;
+  height: 688px;
+  background: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  z-index: 2;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  border: 1px #B3B3B3 solid;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+.icone{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.addPhotoconteiner{
+  display: flex;
+  flex-direction: column;
+  background-color: #E8F1F6;
+  width: 420px;
+  height: 199px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box{
+  display: flex;
+align-items: center;
+
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.flex-box span{
+  font-size: 26px;
+  font-weight: 400;
+}
+.addPhotoconteiner i{
+font-size: 64px;
+}
+.addPhotoconteiner input{
+  background-color: #CBD6DC;
+  color: #306685;
+  border: none;
+  height: 36px;
+  width: 173px;
+}
+.addPhotoconteiner p{
+  font-size: 10px;
+  color: #444444;
+}
+.flex-box input{
+  height: 51px;  
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.flex-box form{
+  display: flex;
+  flex-direction: column;
+}
+
+#returnButton:hover{
+  cursor: pointer;
+}
+#closeButtonAddWorkModal:hover{
+  cursor: pointer;
+}
+#imageInput{
+  display: none;
+}
+.image-input:hover{
+  cursor: pointer;
+}
+.image-input{
+  background-color: #CBD6DC;
+  border-radius: 50px;
+  width: 173px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #306685;
+  font-size: 14px;
+  cursor: pointer;
+}
+#returnButton{
+  font-size: 21px;
+  font-weight: bold;
+  padding: 12px;
+}
+
+#closeButtonAddWorkModal{
+  font-size: 20px;
+  padding: 16px;
+}
+#closeButton{
+  font-size: 20px;
+  padding: 16px;
+}
+.upload-form{
+  display: flex;
+  height: 100%;
+  justify-content:center;
+  gap: 20px;
+  margin: 0;
+
+}
+.upload-form hr{
+  border: 1px solid #B3B3B3;
+  width: 100%;
+}
+.choose-categories{
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  height: 51px;
+  appearance: none;
+ 
+  background: url('icons/chevron-down.svg') no-repeat right 10px center;
+  background-size: 16px;
+}
+.send-image:disabled{
+	color: white;
+	background-color: #A7A7A7;	
+	width: 237px;
+	text-align: center;
+	border-radius: 60px ;
+  height: 36px;
+  border: none;
+  margin-left: 97px;
+  cursor:not-allowed ;
+}
+.addPhotoconteiner{
+  gap: 20px;
+}
+label{
+  font-weight: 500;
+  font-size: 14px;
+}
+#addWorkbutton{
+  cursor: pointer;
+}
+#previewImage{
+  height: 199px;
+  width: 176px;
+  object-fit: cover;
+  position: absolute;
+ display: none;
+}
+
+.send-image:enabled{
+	color: white;
+	background-color: #1D6154;	
+	width: 237px;
+	text-align: center;
+	border-radius: 60px ;
+  height: 36px;
+  border: none;
+  margin-left: 97px;
+  cursor:pointer ;
+}
+.modifier{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
